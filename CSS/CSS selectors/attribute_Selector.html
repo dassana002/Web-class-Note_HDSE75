@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selector</title>
+</head>
+
+<style>
+
+    [id] {
+        color: deepskyblue;
+    }
+
+    [href] {
+        background-color: yellow;
+    }
+
+    [class] {
+        color: red;
+    }
+
+    /* Attribute selector with a value */
+    [href="https://ijse.lk"] {
+        background-color: deepskyblue;
+    }
+
+    /* Attribute selector start with a given value */
+    [href="https"] {
+        background-color: yellow;
+    }
+
+    /* Attribute selector start with a given start value */
+    [href^="https"] {
+        background-color: pink;
+    }
+
+    /* Attribute selector start with a given end value */
+    [href$="org"] {
+        background-color: purple;
+    }
+
+    /* Attribute selector start with a given part of a value */
+    [href*="google"] {
+        background-color: brown;
+    }
+
+    /* Attribute selector start with a given word of a value */
+    [href~="technologies"] {
+        background-color: chartreuse;
+    }
+
+    /* Attribute selector + Type selector */
+    em[class] {
+        background-color: chartreuse;
+    }
+
+</style>
+
+<body>
+
+    <h1> Hello Dassana!</h1>
+
+    <h2 id="abc"> How are you!</h2>
+
+    <h3 class="ABC"> I am Keeping well</h3>
+
+    <h4 class="ABC"> My self</h4>
+
+    <em class="ABC"> decipline</em>
+
+    <p>
+        I am dassana. twenty-three years old and live in galle, but just always live in panadura.
+    </p>
+
+    <br>
+
+    <a href="https://ijse.lk">IJSE</a>
+    <br>
+    <a href="https://dassana.lk">DASSANA</a>
+    <br>
+    <a href="https://amandi.org">AMANDI</a>
+    <br>
+    <a href="https://thiwanka.org">THIWANKA</a>
+    <br>
+    <a href="www.google.com">google</a>
+    <br>
+    <a href="https:// technologies .lk">technologies</a>
+    <br>
+
+</body>
+</html>
